@@ -6,3 +6,11 @@ install:
 - mvn install -DskipTests=true -Dmaven.javadoc.skip=true
 before_install:
   - chmod +x mvnw
+addons:
+  sonarcloud:
+    organization: "tekknowlogy-github"
+    token:
+      secure: f0a33d88acee1d72503f2ce2beb80c735d3794d6
+script:
+  # other script steps might be done before running the actual analysis
+  - sonar-scanner
