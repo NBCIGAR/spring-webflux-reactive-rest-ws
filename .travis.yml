@@ -1,5 +1,7 @@
 language: java
 sudo: true
+services:
+  - mongodb
 install:
 - mvn install -DskipTests=true -Dmaven.javadoc.skip=true
 before_install:
