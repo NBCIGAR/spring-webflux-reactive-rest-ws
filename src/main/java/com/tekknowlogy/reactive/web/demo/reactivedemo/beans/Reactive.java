@@ -18,11 +18,6 @@ import lombok.ToString;
 @NoArgsConstructor
 @JsonAutoDetect
 public class Reactive {
-    public Reactive(String id, String title, String mode) {
-    	this.id = id;
-    	this.title = title;
-    	this.mode = mode;
-	}
 	@Id @JsonProperty
     private String id;
 	@JsonProperty
