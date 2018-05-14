@@ -6,3 +6,9 @@ install:
 - mvn install -DskipTests=true -Dmaven.javadoc.skip=true
 before_install:
   - chmod +x mvnw
+deploy:
+  provider: openshift
+  user: "tekknowlogy"
+  password: "abcdopenshift"
+  domain: "api.starter-us-west-1.openshift.com"
+  app: webfluxDemo
